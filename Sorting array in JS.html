@@ -1,0 +1,28 @@
+<html>
+    <head>
+    </head>
+
+    <body>
+        <script>
+            var songs = ["Zoom","Bounce","Glow","Rush","Spark"]
+            var plays = [334,22,43,1000,679]
+
+            var x = songs.sort();
+            document.write( x,"<br>")
+            var y= songs.reverse();
+            document.write(y,"<br>")
+
+            plays.sort(function(a,b) { return a - b });
+            document.write(plays,"<br>")
+            plays.sort(function (a,b) { return b - a });
+            document.write(plays,"<br>")
+
+            var plays= [343,11,27,690,777]
+            var labelled = plays.map (function(count) { 
+            return count+ "abc"
+            });
+            document.write(labelled)
+
+        </script>
+    </body>
+</html>
